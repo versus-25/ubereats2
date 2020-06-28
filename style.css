@@ -1,0 +1,382 @@
+@font-face{
+    font-family: "Roboto";
+    src: url(Roboto.woff);
+}
+@media (min-width: 0px) and (max-width: 991px){
+    .container{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .main-menu + .line{
+        display: none;
+    }
+    .main-cont{padding: 0 8px 48px 8px;}
+    .main-card{
+        height: 256px;
+    }
+    .menu-card{
+        width: 308px;
+        height: 180px;
+        margin: -125px auto 0 auto;
+    }
+    .menu-card-title{
+        margin: 0;
+        padding: 24px 0 40px 0;
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+        color: #1D1D1D;
+    }
+    .menu-card-text{
+        padding-bottom: 16px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        color: #626262;
+    }
+    .menu-card-badge{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        width: 98px;
+        height: 32px;
+        background: #262626;
+        border-radius: 16px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    .main-menu{
+        display: none;
+    }
+    .title{
+        margin: 56px auto 12px auto;
+        text-align: center;
+    }
+
+    .food-card{
+        border-bottom: 0.05vw solid rgba(117, 117, 117, 0.2);
+        border-radius: 2px;
+    }
+    .food h4{margin: 0 0 0 0;}
+    .food h5{margin: 4px 0 3px 0;}
+    .food h6{margin: 4px 0 16px 0;}
+    .title-line{
+        margin: 0 auto 43px;
+        width: 50px;
+        height: 1px;
+        background: #757575;
+        mix-blend-mode: normal;
+        opacity: 0.3;
+    }
+    .scroll-up-button{
+        width: 64px;
+        height: 64px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .main-cont{padding: 32px 8px 48px 8px;}
+    .menu-card{
+        width: 432px;
+        height: 204px;
+        margin: -284px 0 80px 0;
+    }
+    .menu-card-flex{
+        margin: 0 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-card-title{
+        margin: 0;
+        padding: 38px 0 54px 48px;
+        text-align: left;
+        font-size: 36px;
+        line-height: 42px;
+        color: #1D1D1D;
+    }
+    .menu-card-text{
+        font-size: 14px;
+        line-height: 16px;
+        color: #626262;
+    }
+    .menu-card-badge{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 94px;
+        height: 32px;
+        background: #262626;
+        border-radius: 16px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+    }
+    .main-menu{display: block;}
+    .food{margin-bottom: 32px;}
+    .food-card{
+        border: 0.05vw solid rgba(117, 117, 117, 0.2);
+        border-radius: 2px;
+    }
+    .food h4{margin: 16px 0 0 16px;}
+    .food h5{margin: 4px 0 3px 16px;}
+    .food h6{margin: 4px 0 16px 16px;}
+    .title{margin: 56px 0 0 0;}
+    .scroll-up-button{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        padding-left: 87px;
+        padding-right: 87px;
+    }
+    .main-cont{padding: 32px 87px 80px 87px;}
+    .menu-card{
+        width: 389px;
+        height: 204px;
+    }
+    .menu-card-badge{
+        width: 100px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .food{margin-bottom: 49px;}
+}
+
+.container{
+    margin: 0;
+    max-width: none;
+}
+.header{
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+.navbar{
+    height: 72px;
+}
+.logo{
+    margin: 0;
+    padding: 0;    
+    line-height: 0;
+}
+.logo img{
+    width: 117px;
+    height: 12px;
+}
+.login{
+    height: 40px;
+    width: 70px;
+    font-weight: 500;
+    font-size: 13px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+}
+.basket{
+    margin-left: 16px;
+}
+.main-card{
+    margin-top: 72px;
+    background: url(img/tractir.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 364px;
+}
+.menu-card{
+    z-index: 2;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+.main-menu-url{
+    display: inline-block;
+    padding: 32px 40px 29px 0;
+    color: #626262;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+}
+.main-menu-url:hover{
+    color: #327430;
+}
+.title{
+    font-size: 22px;
+    line-height: 34px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background: #757575;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+.rest{
+    padding: 0 5px 36px 5px;
+}
+.food-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*.food-card:hover{----------------------------------------------------------------------------------------------------
+    background: #757575;
+    opacity: 0.04;
+    mix-blend-mode: normal;
+}*/
+.rest-grid{
+    padding: 0;
+    margin: 16px 0 68px 0;
+}
+.food-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.food-img{
+    height: 160px;
+    /*width: 170px;*/
+}
+.food h4{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+.food h5{
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 21px;
+    color: #626262;
+}
+.food h6{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+}
+.footer{
+    background: #262626;
+}
+.logo-footer{
+    display: flex;
+    height: 115px;/**/
+    align-items: center;
+}
+.logo-footer img{
+    width: 190px;
+    height: 20px;
+}
+.footer-main{
+    /*height: 220px;*/
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+.language{
+    width: 227px;
+    height: 40px;
+    background: #3B3B3B;
+    border: 0;
+    border-radius: 2px;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.btn-content{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-content div{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-content div img{
+    margin-right: 16px;
+}
+.btn-content div span{
+    font-size: 13px;
+    line-height: 15px;
+    font-style: normal;
+}
+.arrow:active{
+    transform: rotate(-90deg);
+}
+.social{
+    display: flex;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 33px;
+}
+.tag{
+    color: #49A144;
+}
+.soc-link{
+    margin-top: 17px;
+}
+
+.footer-app{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 40px 0;
+}
+.app-m {
+    /*width: 120px;
+    height: 40px;*/
+    margin-right: 41px;
+}
+.footer-link{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+.footer-link a{
+    display: block;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-bottom: 24px;
+
+}
+.footer-end{
+    margin-top: 24px;
+}
+.footer-text{
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.footer-text:hover{
+    color: #FFFFFF;
+}
+.scroll-up-button{
+    display: flex;
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+    /*width: 80px;
+    height: 80px;*/
+    align-items: center;
+    justify-content: center;
+    background: #59BD5A;
+    border-radius: 2px;
+}
